@@ -1,0 +1,18 @@
+{
+  "name": "js_excercise_for_backend_4",
+  "version": "1.0.0",
+  "description": "このレポジトリは[Web白熱教室](https://tsuyopon.xyz/)の[JavaScriptの学習コンテンツ > JavaScriptバックエンド編](https://tsuyopon.xyz/learning-contents/web-dev/javascript/backend/)にある「[【エクササイズ】APIで取得したデータのデータ形式をテストする](https://tsuyopon.xyz/learning-contents/web-dev/javascript/backend/js-excercise-for-backend-4/)」で利用するものです。",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "power-assert": "^1.6.1"
+  }
+}
