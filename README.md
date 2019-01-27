@@ -32,7 +32,7 @@
     - [ ] `fetch`という名前の `クラスメソッド` を持つ
         - [ ] `fetch` メソッド( `クラスメソッド` )は、`axios`で、以下のURLを使ってデータを取得する
             - https://opentdb.com/api.php?amount=10&type=multiple
-        - [ ] `fetch`メソッドの戻り値は、`axios.get`メソッドの実行結果をそのまま返す
+        - [ ] `fetch`メソッドの戻り値は、`axios.get`メソッドの実行結果の中に含まれるdataプロパティを返す
 1. [ ] 「test/src/QuizFetcher.spec.js」内で、`QuizFetcher.fetch` メソッドで取得するデータとデータ形式をテストする
     - [ ] `results` プロパティを持つ
     - [ ] `results` プロパティはは10件データをもつ配列である
