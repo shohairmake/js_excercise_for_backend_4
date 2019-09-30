@@ -2,9 +2,9 @@ const mocha = require('mocha');
 const assert = require('power-assert');
 const QuizFetcher = require('../../src/QuizFetcher');
 
-describe('QuizFetcherのクラス', ()=>{
-    describe('fetchメソッドの挙動確認', ()=>{
-        it('fetchメソッドという名前のクラスメソッドを持つ', ()=>{
+describe('QuizFetcherのクラス', () => {
+    describe('fetchメソッドの挙動確認', () => {
+        it('fetchメソッドという名前のクラスメソッドを持つ', () => {
             assert.strictEqual(typeof QuizFetcher.fetch, 'function');
         });
 
@@ -42,17 +42,17 @@ describe('QuizFetcherのクラス', ()=>{
                     assert.strictEqual(typeof data.correct_answer, 'string');
                     assert.strictEqual(Array.isArray(data.incorrect_answers), true);
                     assert.strictEqual(data.incorrect_answers.length, 3);
-                    data.incorrect_answers.forEach(answer=>{
+                    data.incorrect_answers.forEach(answer => {
                         assert.strictEqual(typeof answer, 'string');
                     });
                 });
             });
         });
 
-        it('【コールバック(done)版】fetchメソッドの戻り値の型チェック', done =>{
+        it('【コールバック(done)版】fetchメソッドの戻り値の型チェック', done => {
             QuizFetcher
             .fetch()
-            .then(response=>{
+            .then(response => {
                 const results = response.results;
                 assert.strictEqual(Array.isArray(results), true);
                 assert.strictEqual(results.length, 10);
